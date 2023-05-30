@@ -1,0 +1,24 @@
+{
+	"FileVersion": 3,
+	"Version": 1,
+	"VersionName": "1.0",
+	"FriendlyName": "Thoth",
+	"Description": "",
+	"Category": "Gameplay",
+	"CreatedBy": "Kaya Adrian",
+	"CreatedByURL": "",
+	"DocsURL": "",
+	"MarketplaceURL": "",
+	"SupportURL": "",
+	"CanContainContent": false,
+	"IsBetaVersion": false,
+	"IsExperimentalVersion": false,
+	"Installed": true,
+	"Modules": [
+		{
+			"Name": "Thoth",
+			"Type": "Runtime",
+			"LoadingPhase": "Default"
+		}
+	]
+}
