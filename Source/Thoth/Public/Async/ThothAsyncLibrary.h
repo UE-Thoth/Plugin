@@ -27,17 +27,9 @@ public:
 		UObject* const OutputObject,
 		const EThothAsyncExecutionMode ExecutionMode,
 		const FThothAsyncCallback& Callback,
-		const FThothAsyncCompletionCallback* const CompletionCallback = nullptr
+		const FThothAsyncCompletionCallback& CompletionCallback = FThothAsyncCompletionCallback()
 	) noexcept
-	{
-		return K2_ExecuteAsync(
-			InputObject,
-			OutputObject,
-			ExecutionMode,
-			Callback,
-			CompletionCallback ? *CompletionCallback : FThothAsyncCompletionCallback()
-		);
-	}
+	{ return K2_ExecuteAsync(InputObject, OutputObject, ExecutionMode, Callback, CompletionCallback); }
 	
 protected:
 	UFUNCTION(BlueprintCallable, Category = "Thoth|Async", DisplayName = "Execute Async", meta = (

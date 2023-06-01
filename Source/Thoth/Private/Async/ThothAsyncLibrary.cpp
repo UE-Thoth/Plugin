@@ -23,7 +23,13 @@ UThothFutureObject* UThothAsyncLibrary::K2_ExecuteAsync(
 			FutureObject->InternalFuture = LIKELY(Callback.ExecuteIfBound(InputObject, OutputObject)) ?
 				OutputObject : nullptr;
 		},
-		[CompletionCallback] { return CompletionCallback.ExecuteIfBound(); }
+		[CompletionCallback]
+		{
+			if (UNLIKELY(CompletionCallback.IsBound()))
+			{
+				CompletionCallback.Execute();
+			}
+		}
 	);
 	return FutureObject;
 }
