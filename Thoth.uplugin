@@ -1,18 +1,18 @@
 {
 	"FileVersion": 3,
 	"Version": 1,
-	"VersionName": "1.0",
+	"VersionName": "0.1",
 	"FriendlyName": "Thoth",
-	"Description": "",
+	"Description": "Create threaded and asynchronous tasks within Blueprints for improved runtime performance.",
 	"Category": "Gameplay",
 	"CreatedBy": "Kaya Adrian",
 	"CreatedByURL": "",
-	"DocsURL": "",
+	"DocsURL": "https://github.com/UE-Thoth/Plugin",
 	"MarketplaceURL": "",
 	"SupportURL": "",
 	"CanContainContent": false,
 	"IsBetaVersion": false,
-	"IsExperimentalVersion": false,
+	"IsExperimentalVersion": true,
 	"Installed": true,
 	"Modules": [
 		{
