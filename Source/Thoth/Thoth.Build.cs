@@ -9,10 +9,10 @@ public class Thoth : ModuleRules
 	{
 		Type = ModuleType.CPlusPlus;
 		PCHUsage = PCHUsageMode.NoPCHs;
+		IWYUSupport = IWYUSupport.Full;
 		CppStandard = CppStandardVersion.Cpp20;
 		
 		bUseUnity = false;
-		bEnforceIWYU = true;
 		bUsePrecompiled = false;
 		
 		PublicDependencyModuleNames.AddRange(new[]
